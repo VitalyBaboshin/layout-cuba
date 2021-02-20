@@ -1,0 +1,65 @@
+html {
+  box-sizing: border-box;
+}
+
+*,*::before, *::after {
+  box-sizing: inherit;
+}
+
+a{
+  text-decoration: none;
+  color: inherit;
+}
+
+ul, li {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  margin: 0;
+  font-size: inherit;
+}
+
+p {
+  margin: 0;
+}
+body {
+  min-width: 320px;
+  overflow-x: hidden;
+  position: relative;
+  margin: 0 auto;
+  @extend %lt-regular;
+  font-size: 16px;
+  line-height: 28px;
+  color: #505050;
+}
+
+.container {
+  max-width: 1200px;
+  padding: 0 15px;
+  margin: 0 auto;
+}
+.container-content {
+  max-width: 970px;
+  margin: 0 auto;
+}
+.section-line {
+  border-bottom: 1px solid #D0D4D8;
+}
+.header__top{
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  height: 100vh;
+  padding: 40px;
+}
+
+.title {
+  @extend %grg-regular;
+  font-size: 32px;
+  line-height: 38px;
+  text-align: center;
+  color: #4E5665;
+}
